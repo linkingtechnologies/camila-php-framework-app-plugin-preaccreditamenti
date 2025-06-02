@@ -1,6 +1,6 @@
 <?php
 /*  This File is part of Camila PHP Framework
-    Copyright (C) 2006-2022 Umberto Bresciani
+    Copyright (C) 2006-2025 Umberto Bresciani
 
     Camila PHP Framework is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -18,7 +18,6 @@
 $camilaUI = new CamilaUserInterface();
 
 $_CAMILA['page']->camila_export_enabled = false;
-
 
 if (isset($_REQUEST['dashboard'])) {
 	$currentTab = $camilaUI->printHomeMenu(CAMILA_HOMEDIR.'/plugins/'.basename(dirname(__FILE__)).'/conf/menu.xml');

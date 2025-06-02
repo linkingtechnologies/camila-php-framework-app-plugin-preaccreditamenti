@@ -6,4 +6,10 @@
   <url>?dashboard=m0</url>
   <pages></pages>
  </tab>
+ <tab>
+  <id>m4</id>
+  <title>AIUTO</title>
+  <url>?dashboard=m4</url>
+  <pages>iw</pages>
+ </tab>
 </menu>
