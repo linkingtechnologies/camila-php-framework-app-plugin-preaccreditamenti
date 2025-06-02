@@ -1,0 +1,9 @@
+<?xml version='1.0' standalone='yes'?>
+<menu>
+ <tab>
+  <id>m0</id>
+  <title>PREACCREDITAMENTI</title>
+  <url>?dashboard=m0</url>
+  <pages></pages>
+ </tab>
+</menu>
