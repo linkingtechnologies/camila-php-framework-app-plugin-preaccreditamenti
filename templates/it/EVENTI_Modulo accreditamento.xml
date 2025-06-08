@@ -1,0 +1,33 @@
+<?xml version='1.0' standalone='yes' ?>
+<reports>
+	<report>
+		<id>1</id>
+		<query>SELECT ${VOLONTARI EVENTO.CODICE FISCALE} AS 'BARCODE',${VOLONTARI EVENTO.CODICE FISCALE} AS 'CODICE FISCALE',${VOLONTARI EVENTO.ORGANIZZAZIONE} AS 'ORGANIZZAZIONE',${VOLONTARI EVENTO.COGNOME},${VOLONTARI EVENTO.NOME}, 'PRANZO', 'SERVIZIO' FROM ${VOLONTARI EVENTO}</query>
+		<graphs>
+			<graph>
+				<id>1</id>
+				<type>table</type>
+				<barcodeColumn>0</barcodeColumn>
+				<barcodeType>C39</barcodeType>
+				<barcodeSize>.5</barcodeSize>
+				<barcodeHeight>2</barcodeHeight>
+				<title>Volontari preaccreditati</title>
+				<columnWidths>100</columnWidths>
+				<sum>0</sum>
+			</graph>
+		</graphs>
+	</report>
+	<report>
+		<id>2</id>
+		<query>SELECT ${MEZZI EVENTO.TARGA} AS 'TARGA' FROM ${MEZZI EVENTO}</query>
+		<graphs>
+			<graph>
+				<id>1</id>
+				<type>table</type>
+				<title>Mezzi preaccreditati</title>
+				<columnWidths>100</columnWidths>
+				<sum>0</sum>
+			</graph>
+		</graphs>
+	</report>
+</reports>
