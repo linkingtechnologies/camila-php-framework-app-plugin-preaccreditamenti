@@ -1,15 +1,15 @@
 <?xml version='1.0' standalone='yes'?>
 <menu>
  <tab>
-  <id>m0</id>
+  <id>home</id>
   <title>PREACCREDITAMENTI</title>
-  <url>?dashboard=m0</url>
-  <pages></pages>
+  <url>?dashboard=home</url>
+  <pages>event</pages>
  </tab>
  <tab>
-  <id>m4</id>
+  <id>help</id>
   <title>AIUTO</title>
-  <url>?dashboard=m4</url>
-  <pages>iw</pages>
+  <url>?dashboard=help</url>
+  <pages>import-wizard</pages>
  </tab>
 </menu>

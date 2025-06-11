@@ -13,7 +13,7 @@ $_CAMILA['page']->add_raw(new HAW_raw(HAW_HTML, '<div class="col-xs-12 col-md-4 
 $camilaUI->insertButton('plugins/segreteria-campo/docs/it/html/manual.html', 'Manuale','globe');
 $_CAMILA['page']->add_raw(new HAW_raw(HAW_HTML, '</div>'));
 $_CAMILA['page']->add_raw(new HAW_raw(HAW_HTML, '<div class="col-xs-12 col-md-4 column is-12-mobile is-4-desktop">'));
-$camilaUI->insertButton('?dashboard=iw', 'Importa dati esempio','upload');
+$camilaUI->insertButton('?dashboard=import-wizard', 'Importa dati esempio','upload');
 $_CAMILA['page']->add_raw(new HAW_raw(HAW_HTML, '</div>'));
 $_CAMILA['page']->add_raw(new HAW_raw(HAW_HTML, '<div class="col-xs-12 col-md-4 column is-12-mobile is-4-desktop">'));
 $_CAMILA['page']->add_raw(new HAW_raw(HAW_HTML, '</div>'));

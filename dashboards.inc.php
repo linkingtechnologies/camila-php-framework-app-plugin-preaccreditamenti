@@ -21,11 +21,11 @@ $_CAMILA['page']->camila_export_enabled = false;
 
 if (isset($_REQUEST['dashboard'])) {
 	$currentTab = $camilaUI->printHomeMenu(CAMILA_HOMEDIR.'/plugins/'.basename(dirname(__FILE__)).'/conf/menu.xml');
-    require('plugins/'.basename(dirname(__FILE__)).'/dashboard_' . $_REQUEST['dashboard'] . '.inc.php');
+    require('plugins/'.basename(dirname(__FILE__)).'/dashboard-' . $_REQUEST['dashboard'] . '.inc.php');
 } else {
-	$defaultId = 'm0';
+	$defaultId = 'home';
 	$currentTab = $camilaUI->printHomeMenu(CAMILA_HOMEDIR.'/plugins/'.basename(dirname(__FILE__)).'/conf/menu.xml', $defaultId);
-	require('plugins/'.basename(dirname(__FILE__)).'/dashboard_' . $defaultId . '.inc.php');
+	require('plugins/'.basename(dirname(__FILE__)).'/dashboard-' . $defaultId . '.inc.php');
 }
 
 ?>
