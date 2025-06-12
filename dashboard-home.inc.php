@@ -18,7 +18,7 @@ while (!$result->EOF) {
 		'label' => $f[1],
 		'description' => $f[4],
 		'buttons' => [
-			['label' => 'Preaccreditamento', 'url' => '?dashboard=event&id='.$f[0], 'class' => 'is-small is-primary']
+			['label' => 'Preaccreditamento volontari, mezzi e materiali', 'url' => '?dashboard=event&id='.$f[0], 'class' => 'is-small is-primary']
 		]
 	];
 
