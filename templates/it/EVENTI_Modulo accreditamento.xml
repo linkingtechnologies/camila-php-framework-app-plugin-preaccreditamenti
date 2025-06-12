@@ -1,8 +1,22 @@
 <?xml version='1.0' standalone='yes' ?>
 <reports>
 	<report>
+		<graphs>
+			<graph>
+				<id>1</id>
+				<type>text</type>
+				<html><![CDATA[
+				<strong>ESERCITAZIONE DI PROTEZIONE CIVILE</strong><br/>
+				<strong>SEGRETERIA CMP</strong>
+				]]>
+				</html>
+			</graph>
+		</graphs>
+	</report>
+
+	<report>
 		<id>1</id>
-		<query>SELECT ${VOLONTARI EVENTO.CODICE FISCALE} AS 'BARCODE',${VOLONTARI EVENTO.CODICE FISCALE} AS 'CODICE FISCALE',${VOLONTARI EVENTO.ORGANIZZAZIONE} AS 'ORGANIZZAZIONE',${VOLONTARI EVENTO.COGNOME},${VOLONTARI EVENTO.NOME}, 'PRANZO', 'SERVIZIO' FROM ${VOLONTARI EVENTO}</query>
+		<query>SELECT ${VOLONTARI EVENTO.CODICE FISCALE} AS 'BARCODE',${VOLONTARI EVENTO.CODICE FISCALE} AS 'CODICE FISCALE',${VOLONTARI EVENTO.ORGANIZZAZIONE} AS 'ORGANIZZAZIONE',${VOLONTARI EVENTO.COGNOME},${VOLONTARI EVENTO.NOME} FROM ${VOLONTARI EVENTO}</query>
 		<graphs>
 			<graph>
 				<id>1</id>
@@ -19,12 +33,25 @@
 	</report>
 	<report>
 		<id>2</id>
-		<query>SELECT ${MEZZI EVENTO.TARGA} AS 'TARGA' FROM ${MEZZI EVENTO}</query>
+		<query>SELECT ${MEZZI EVENTO.TARGA} AS 'TARGA', ${MEZZI EVENTO.ORGANIZZAZIONE} AS 'ORGANIZZAZIONE',${MEZZI EVENTO.TIPOLOGIA} AS 'TIPOLOGIA', ${MEZZI EVENTO.MARCA} AS 'MARCA', ${MEZZI EVENTO.MODELLO} AS 'MODELLO' FROM ${MEZZI EVENTO}</query>
 		<graphs>
 			<graph>
 				<id>1</id>
 				<type>table</type>
 				<title>Mezzi preaccreditati</title>
+				<columnWidths>100</columnWidths>
+				<sum>0</sum>
+			</graph>
+		</graphs>
+	</report>
+	<report>
+		<id>3</id>
+		<query>SELECT ${MATERIALI EVENTO.ORGANIZZAZIONE} AS 'ORGANIZZAZIONE',${MATERIALI EVENTO.CATEGORIA} AS 'CATEGORIA',${MATERIALI EVENTO.TIPOLOGIA} AS 'TIPOLOGIA', ${MATERIALI EVENTO.MARCA} AS 'MARCA', ${MATERIALI EVENTO.MODELLO} AS 'MODELLO' FROM ${MATERIALI EVENTO}</query>
+		<graphs>
+			<graph>
+				<id>1</id>
+				<type>table</type>
+				<title>Materiali preaccreditati</title>
 				<columnWidths>100</columnWidths>
 				<sum>0</sum>
 			</graph>
